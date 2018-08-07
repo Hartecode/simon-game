@@ -1,0 +1,107 @@
+#gameBody{
+    margin: auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#green {
+    background-color: #009000;
+    height: 225px;
+    width: 220px;
+    border-radius: 100% 0 0 0;
+    margin: auto;
+    cursor: pointer;
+    outline: none;
+    -webkit-transition: .5s; // Safari
+    transition: width .5s; 
+}
+
+#red {
+    background-color: #ad0000;
+    height: 225px;
+    width: 220px;
+    border-radius: 0 100% 0 0;
+    margin: auto;
+    cursor: pointer;
+    outline: none;
+    -webkit-transition: .5s; // Safari
+    transition: width .5s; 
+}
+
+#yellow {
+    background-color: #abab00;
+    height: 225px;
+    width: 220px;
+    border-radius: 0 0 0 100%;
+    margin: auto;
+    margin-top: 20px;
+    cursor: pointer;
+    outline: none;
+    -webkit-transition: .5s; // Safari
+    transition: width .5s; 
+}
+
+#blue {
+    background-color: #00009e;
+    height: 225px;
+    width: 220px;
+    border-radius: 0 0 100% 0;
+    margin: auto;
+    margin-top: 20px;
+    cursor: pointer;
+    outline: none;
+    -webkit-transition: .5s; // Safari
+    transition: width .5s; 
+}
+
+#centerBlock {
+    position: absolute;
+    background-color: black;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    left: 25%;
+    bottom: 25%;
+}
+
+#score {
+    height: 50px;
+    width: 77px;
+    background-color: gray;
+    display: inline-block;
+    margin: 50px 17px 0;
+    font-size: 44px;
+}
+
+#power {
+    height: 40px;
+    width: 37px;
+    background-color: green;
+    border-radius: 50%;
+    outline: none;
+}
+
+button#green.green:active, button#green.greenflash {
+  background-color: #01fb01;
+}
+
+button#red.red:active, button#red.redflash {
+  background-color: #ff0404;
+}
+
+button#yellow.yellow:active, button#yellow.yellowflash {
+  background-color: #ffff03;
+}
+
+button#blue.blue:active, button#blue.blueflash {
+  background-color: #0101ff;
+}
